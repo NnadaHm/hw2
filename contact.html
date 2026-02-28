@@ -24,25 +24,26 @@
 
 <main>
 
-<form action="contact.html" method="get">
-<label>Name:</label>
-<input type="text" name="name">
+<!-- This is a static website (GitHub Pages), so the form will not be submitted to a server -->
+<form action="#" method="get">
 
-<label>Email:</label>
-<input type="email" name="email">
+<label for="name">Name:</label>
+<input id="name" type="text" name="name">
 
-<label>Message:</label>
-<textarea name="message"></textarea>
+<label for="email">Email:</label>
+<input id="email" type="email" name="email">
 
-<button type="submit">Send</button>
+<label for="message">Message:</label>
+<textarea id="message" name="message"></textarea>
+
+<!-- type="button" prevents sending to a server (avoids 405 on static hosting) -->
+<button type="button">Send</button>
 
 </form>
 
 <p>
 Or email me directly:
-<a href="mailto:Nada.homod2004@gmail.com">
-Nada.homod2004@gmail.com
-</a>
+<a href="mailto:Nada.homod2004@gmail.com">Nada.homod2004@gmail.com</a>
 </p>
 
 <p><a href="#top">Back to Top</a></p>
@@ -55,4 +56,3 @@ Nada.homod2004@gmail.com
 
 </body>
 </html>
-
