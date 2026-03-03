@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="utf-8">
 <title>HW2 - Contact</title>
@@ -8,51 +8,43 @@
 <body>
 
 <header id="top">
-
-<h1>Contact Me</h1>
-
-<nav role="navigation">
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="cv.html">CV</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-
+  <h1>Contact Me</h1>
+  <nav role="navigation">
+    <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="cv.html">CV</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </ul>
+    </nav>
 </header>
 
 <main>
 
-<!-- This is a static website (GitHub Pages), so the form will not be submitted to a server -->
-<form action="#" method="get">
+  <fieldset>
+    <legend>Feel free to send messages</legend>
+    <ul>
+      <form action="thankyou.html" method="GET">
+        <li><lable>Name: <input type="text" name="name"></lable></li>
+        <li><lable>Email: <input type="email" name="email"></lable></li>
+        <li><lable>Message: <textarea name="message"></textarea></lable></li>
+        <button type="submit">Send</button>
+      </form>
+    </ul>
+  </fieldset>
 
-<label for="name">Name:</label>
-<input id="name" type="text" name="name">
 
-<label for="email">Email:</label>
-<input id="email" type="email" name="email">
-
-<label for="message">Message:</label>
-<textarea id="message" name="message"></textarea>
-
-<!-- type="button" prevents sending to a server (avoids 405 on static hosting) -->
-<button type="button">Send</button>
-
-</form>
-
-<p>
-Or email me directly:
+<p>Or email me directly:
 <a href="mailto:Nada.homod2004@gmail.com">Nada.homod2004@gmail.com</a>
 </p>
 
-<p><a href="#top">Back to Top</a></p>
+<p align="right"><a href="#top"> <img src="images/up-chevron.png" alt="Back to Top" width="30"></a></p>
 
 </main>
 
 <footer>
-<p>CSC457 HW2</p>
+    <p align="center">CSC457 --- HW2</p>
 </footer>
-
 </body>
 </html>
+
